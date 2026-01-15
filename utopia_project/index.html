@@ -31,50 +31,27 @@
 <body>
     <header>
         <h1>UTOPIA: Your Experience</h1>
-    </header>
+    </header>    
     <section>
         <form action="" method="get">
-            <fieldset> <!-- usamos essa tag para indicarmos para o navegador que está comecando um conjunto de elementos-->
-                <legend>DADOS PESSOAIS</legend>
-                
-            <!-- DADOS PESSOAIS -->
-            <label for="userName">Nome: </label> 
-            <input type="text" name="userName" required> <!-- 
-            Required faz com que seja obrigatorio inserir o nome-->
 
-                <br>
+        <fieldset>
 
-            <label for="userAge">Idade</label>
-            <input type="number" name="userAge" min="12" max="100" required> <!-- 
-            Faz com que definimos o minimo de idade e o maximo -->
+                <legend>Perfil</legend>
 
-                <br>
-            <label for="birthDate">Data de Nascimento</label>
-            <input type="date" name="birthDate">
-            <br>
-            <label for="userEmail">Email</label>
-            <input type="email" name="userEmail" placeholder="email@gmail.com" required >
+                <p>Gênero: </p>
+                <input type="radio" name="userGender" value="Masculino">
+                <label for=""userGender>Masculino</label>
 
-        <br>
+                <input type="radio" name="userGender" value="Feminino">
+                <label for=""userGender>Feminino</label>
 
-            <label for="userPhoneNumber">Telefone</label> <!-- 
-            pattern 
-            Defini o quantidade de numero que o usuario pode usar == 0 até 9 == definido entre [] e quantidade de digitos necessaria == 11 definido em {}
+                <input type="radio" name="userGender" value="notInformed">
+                <label for=""userGender>Prefiro não dizer</label>
 
-            placeholder faz aquele espaço em branco para o usuario preenche, ele fornece uma breve legenda de instrucao
-            -->
-            <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
-
-        <br>
-
-            <label for="userImage">Upload de Foto</label> <!-- accept faz com que a caixa de arquivo receba um tipo de arquivo sendo nesse projeto imagens-->
-            <input type="file" accept="image/*" name="userImage">
-
-        <br>
         </fieldset>
             <button type="submit">Enviar</button>
         </form>
     </section>
-    
-</body>
+    </body>
 </html>
