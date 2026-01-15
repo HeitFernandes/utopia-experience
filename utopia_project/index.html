@@ -1,3 +1,26 @@
+<!-- 
+        <form>
+
+        Para indicar para o navegador que iniciamos um formulário na pagina
+            Usamos a TAG = "form"
+            action é um atributo que receba uma URL de destino dos dados.
+
+            Outro atributo que precisamos colocar é o "method", utilizado para dizer a forma de envio, como esses dados vão entrar.
+
+
+        <input type"tipo">
+
+        todo form precisa de pelo menos uma caixa de informacao seja ela de qual tipo for, uma caixa de texto, caixa de numero...
+            type == atributo para definirmos o tipo de caixa.
+
+
+        <label for="nomeDoCampo" >Nome: </label>
+            Usamos para fazer a descricao dos campos - Cria uma legenda
+
+        <button type"">Enviar</button>
+            Criamos um botão com essa tag, definimos o tipo dele, existe 3 e usamos o submit, pois esse botão vai submeter essas informacoes para algum lugar
+        
+-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,6 +29,52 @@
     <title>Utopia Experience</title>
 </head>
 <body>
+    <header>
+        <h1>UTOPIA: Your Experience</h1>
+    </header>
+    <section>
+        <form action="" method="get">
+            <fieldset> <!-- usamos essa tag para indicarmos para o navegador que está comecando um conjunto de elementos-->
+                <legend>DADOS PESSOAIS</legend>
+                
+            <!-- DADOS PESSOAIS -->
+            <label for="userName">Nome: </label> 
+            <input type="text" name="userName" required> <!-- 
+            Required faz com que seja obrigatorio inserir o nome-->
+
+                <br>
+
+            <label for="userAge">Idade</label>
+            <input type="number" name="userAge" min="12" max="100" required> <!-- 
+            Faz com que definimos o minimo de idade e o maximo -->
+
+                <br>
+            <label for="birthDate">Data de Nascimento</label>
+            <input type="date" name="birthDate">
+            <br>
+            <label for="userEmail">Email</label>
+            <input type="email" name="userEmail" placeholder="email@gmail.com" required >
+
+        <br>
+
+            <label for="userPhoneNumber">Telefone</label> <!-- 
+            pattern 
+            Defini o quantidade de numero que o usuario pode usar == 0 até 9 == definido entre [] e quantidade de digitos necessaria == 11 definido em {}
+
+            placeholder faz aquele espaço em branco para o usuario preenche, ele fornece uma breve legenda de instrucao
+            -->
+            <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
+
+        <br>
+
+            <label for="userImage">Upload de Foto</label> <!-- accept faz com que a caixa de arquivo receba um tipo de arquivo sendo nesse projeto imagens-->
+            <input type="file" accept="image/*" name="userImage">
+
+        <br>
+        </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
     
 </body>
 </html>
