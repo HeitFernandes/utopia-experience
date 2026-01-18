@@ -146,12 +146,15 @@
                 <br>
             <label for="musicStyle">Estilo musical: </label>
               <input list="styleTypes" id="musicStyle" name="userMusicStyle" type="text">
-                 <datalist id="styleTypes">
+                 <datalist id="styleTypes"> <!-- lista de dados para relacionar com o input, percebe-se no input que chamamos o list="idDaLista" para se conectar com ele  -->
                         <option value="rock"></option>
                         <option value="pop"></option>
                         <option value="trap"></option>
                         <option value="rap"></option>
                 </datalist>
+            <br>
+                <label for="favoriteColor">Cor favorita</label>
+                <input type="color" name="userFavoriteColor" id="favoriteColor">
         </fieldset>
             <button type="submit">Enviar</button>
         </form>
