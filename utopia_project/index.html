@@ -169,6 +169,17 @@
             <label for="comentary">Diga o que achou do show: </label>
                 <br>
             <textarea name="userComentary" id="comentary" placeholder="Coloque sua Opinião aqui..."></textarea>
+            <br>
+            <fieldset>
+                    <legend>Confirmações</legend>
+
+                    <input type="checkbox" name="userLgpd" id="userLgpdTerm" value="accept" required>
+                    <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
+                    <br>
+                    <input type="checkbox" name="userGetResult" id="getResult" value="accepted" required>
+                    <label for="getResult">Desejo receber o resultado por email</label>
+            </fieldset>
+            <button type="reset">Limpar</button>
         </fieldset>
             <button type="submit">Enviar</button>
         </form>
