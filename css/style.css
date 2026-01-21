@@ -110,15 +110,19 @@ textarea:invalid{
 
 input:valid,
 select:valid,
-textarea:valid{
+textarea:valid
+{
     border-color: rgb(111, 255, 0);
 }
 
-input[type="tel"]{
+input[type="tel"]
+input[type="file"]
+{
     margin-bottom: 0;
 }
 
-small{
+small
+{
     color: #ffffff;
     margin-bottom: 20px;
     display: inline-block;
@@ -126,12 +130,14 @@ small{
 
 
 
-@keyframes movimento{
+@keyframes movimento
+{
     from {left: 0px;}
     to {left: 20px;}
 }
 
-button {
+button 
+{
     width: 100px;
     height: 30px;
     margin-right: 20px;
