@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "AlteHaas";
+    src: url(/fonts/AlteHaasGroteskRegular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat-Medium.ttf);
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+fieldset {
+border: none;
+}
+
+.logoPrincipal{
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.titulo {
+    font-size: 40px;
+    font-family: AlteHaas, sans-serif, 'Times New Roman', Times, serif;
+    color: #6B4A3A ;
+    text-align: center;
+    position: relative;
+    animation: movimento 5s infinite;
+    animation-duration: 4s;
+}
+
+.sectionPrincipal{
+    text-align: center;
+    font-family: Montserrat, sans-serif, 'Times New Roman', Times, serif;
+    color: #ffffff ;
+}
+
+.formDP{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    gap: 50px;
+
+}
+
+@keyframes movimento{
+    from {left: 0px;}
+    to {left: 20px;}
+}
