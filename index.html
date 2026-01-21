@@ -37,17 +37,16 @@
     </header>    
         <section>
          <form action="pages/sucess.html" method="get">
-            <fieldset> <!-- usamos essa tag para indicarmos para o navegador que está comecando um conjunto de elementos-->
+            <fieldset> 
+
                 <legend>DADOS PESSOAIS</legend>
-                
-            <!-- DADOS PESSOAIS -->
+
             <label for="name">Nome: </label> 
             <input 
             id="name" 
             type="text" 
             name="userName" 
-            required> <!-- 
-            Required faz com que seja obrigatorio inserir o nome-->
+            required> 
 
             <br>
 
@@ -89,8 +88,13 @@
             type="tel" 
             name="userPhoneNumber" 
             pattern="[0-9]{11}" 
-            placeholder="DDD + número sem espaços ou hífen">
-
+            placeholder="DDD + número sem espaços ou hífen"
+            aria-describedby="phoneHelp"
+            >
+            <small id="phoneHelp">
+                Preencha com 11 dígitos no formato: DD + 
+                número sem espaços ou hífen
+            </small>
         <br>
 
             <label for="image">Upload de Foto</label> <!-- accept faz com que a caixa de arquivo receba um tipo de arquivo sendo nesse projeto imagens-->

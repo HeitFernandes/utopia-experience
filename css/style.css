@@ -114,6 +114,16 @@ textarea:valid{
     border-color: rgb(111, 255, 0);
 }
 
+input[type="tel"]{
+    margin-bottom: 0;
+}
+
+small{
+    color: #ffffff;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
 
 
 @keyframes movimento{
