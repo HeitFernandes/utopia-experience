@@ -43,7 +43,6 @@ h1 {
     animation: movimento 5s infinite;
     animation-duration: 4s;
     margin-bottom: 20px;
-    background-color: #514d4d;
 
 }
 
@@ -52,11 +51,12 @@ form{
     color: #ffffff ;
     padding: 15px;
     border-radius: 16px;
+    margin-bottom: 30px;
 }
 
 fieldset{
     padding: 15px;
-    border: 5px solid #b3aeae;
+    border: 5px solid #2f2c2c;
     margin-bottom: 15px;
     
 }
@@ -70,6 +70,12 @@ legend{
 label {
     display: inline-block;
     margin-bottom: 5px;
+    
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 input, 
@@ -96,8 +102,51 @@ input[type="color"]{
     padding: 0 5px;
 }
 
+input:invalid, 
+select:invalid, 
+textarea:invalid{
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid{
+    border-color: rgb(111, 255, 0);
+}
+
+
 
 @keyframes movimento{
     from {left: 0px;}
     to {left: 20px;}
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover
+{
+    background-color: green;
+    color: #ffffff;
+}
+
+button[type="reset"]:hover
+{
+    background-color: rgb(128, 0, 0);
+    color: #ffffff;
+}
+
+input[type=checkbox]:hover,
+input[type="radio"]:hover,
+label:hover
+{
+    color: #aca1a1;
+    cursor: pointer;
 }

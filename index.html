@@ -42,21 +42,39 @@
                 
             <!-- DADOS PESSOAIS -->
             <label for="name">Nome: </label> 
-            <input id="name" type="text" name="userName" required> <!-- 
+            <input 
+            id="name" 
+            type="text" 
+            name="userName" 
+            required> <!-- 
             Required faz com que seja obrigatorio inserir o nome-->
 
-                <br>
+            <br>
 
             <label for="age">Idade</label>
-            <input id="age" type="number" name="userAge" min="12" max="100" required> <!-- 
+            <input 
+            id="age" 
+            type="number" 
+            name="userAge" 
+            min="12" 
+            max="100" 
+            required> <!-- 
             Faz com que definimos o minimo de idade e o maximo -->
 
                 <br>
             <label for="birthDate">Data de Nascimento</label>
-            <input id="birthDate" type="date" name="userBirthDate">
+            <input 
+            id="birthDate" 
+            type="date" 
+            name="userBirthDate">
             <br>
             <label for="email">Email</label>
-            <input id="email" type="email" name="userEmail" placeholder="email@gmail.com" required >
+            <input 
+            id="email" 
+            type="email" 
+            name="userEmail" 
+            placeholder="email@gmail.com" 
+            required >
 
         <br>
 
@@ -66,12 +84,21 @@
 
             placeholder faz aquele espaço em branco para o usuario preenche, ele fornece uma breve legenda de instrucao
             -->
-            <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
+            <input 
+            id="phoneNumber" 
+            type="tel" 
+            name="userPhoneNumber" 
+            pattern="[0-9]{11}" 
+            placeholder="DDD + número sem espaços ou hífen">
 
         <br>
 
             <label for="image">Upload de Foto</label> <!-- accept faz com que a caixa de arquivo receba um tipo de arquivo sendo nesse projeto imagens-->
-            <input id="image" type="file" accept="image/*" name="userImage">
+            <input 
+            id="image" 
+            type="file" 
+            accept="image/*" 
+            name="userImage">
         <br>
             </fieldset>
        <fieldset>
@@ -79,17 +106,33 @@
                 <legend>Perfil</legend>
 
                 <p>Gênero: </p>
-                <input  id="masc" type="radio" name="userGender" value="Masculino">
+                <input  
+                id="masc" 
+                type="radio" 
+                name="userGender" 
+                value="Masculino">
                 <label for="masc">Masculino</label>
 
-                <input id="fem" type="radio" name="userGender" value="Feminino">
+                <input 
+                id="fem" 
+                type="radio" 
+                name="userGender" 
+                value="Feminino">
                 <label for="fem">Feminino</label>
 
-                <input id="notInformed" type="radio" name="userGender" value="notInformed">
+                <input id="notInformed" 
+                type="radio" 
+                name="userGender" 
+                value="notInformed">
                 <label for="notInformed">Prefiro não dizer</label>
+
                                     <br>
+
                 <label for="maritalStatus">Estado Civil: </label>
-                <select id="maritalStatus" name="userMaritalStatus" required>  Criando uma lista suspensa
+                <select 
+                id="maritalStatus" 
+                name="userMaritalStatus" 
+                required>  Criando uma lista suspensa
                             <option value="notInformed">Selecione...</option>
                             <option value="solteiro">Solteiro</option>
                             <option value="casado">Casado</option>
@@ -98,7 +141,10 @@
                 </select>
             <br>
             <label for="state">Estado: </label>
-                <select id="state" name="userState" required> 
+                <select 
+                id="state" 
+                name="userState" 
+                required> 
                     <option value="notInformed">Selecione...</option>
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
@@ -130,38 +176,82 @@
                 </select>
                 <br>
                 <label for="city">Cidade: </label>
-                <input id="city" type="text" name="userCity" required min="7" max="19">
+                <input 
+                id="city" 
+                type="text" 
+                name="userCity" 
+                required 
+                min="7" 
+                max="19">
         </fieldset> 
         <fieldset>
+
             <legend>Hábitos</legend>
+
                 <p>Redes Sociais</p>
-            <input id="instagram" type="checkbox" name="userSocial" value="instagram">
-        <label for="instagram">Instagram</label>
+        <input 
+            id="instagram" 
+            type="checkbox" 
+            name="userSocial" 
+            value="instagram">
+            <label for="instagram">Instagram</label>
+
                 <br>
-            <input  id="facebook" type="checkbox" name="userSocial" value="facebook">
-        <label for="facebook">Facebook</label>
+
+            <input  id="facebook" 
+            type="checkbox" 
+            name="userSocial" 
+            value="facebook">
+            <label for="facebook">Facebook</label>
+
                 <br>
-            <input id="linkedin" type="checkbox" name="userSocial" value="linkedin">
-        <label for="linkedin">Linkedin</label>
+
+            <input 
+            id="linkedin" 
+            type="checkbox" 
+            name="userSocial" 
+            value="linkedin">
+            <label for="linkedin">Linkedin</label>
+
                 <br>
-         <input id="X" type="checkbox" name="userSocial" value="X">
+
+         <input 
+         id="X" 
+         type="checkbox" 
+         name="userSocial" 
+         value="X">
             <label for="X">X</label>
+
                 <br>
+
             <label for="musicStyle">Estilo musical: </label>
-              <input list="styleTypes" id="musicStyle" name="userMusicStyle" type="text">
+              <input 
+              list="styleTypes" 
+              id="musicStyle" 
+              name="userMusicStyle" 
+              type="text">
+
                  <datalist id="styleTypes"> <!-- lista de dados para relacionar com o input, percebe-se no input que chamamos o list="idDaLista" para se conectar com ele  -->
                         <option value="rock"></option>
                         <option value="pop"></option>
                         <option value="trap"></option>
                         <option value="rap"></option>
                 </datalist>
-            <br>
-                <label for="favoriteColor">Cor favorita</label>
-                <input type="color" name="userFavoriteColor" id="favoriteColor">
 
             <br>
+
+                <label for="favoriteColor">Cor favorita</label>
+                <input 
+                type="color" 
+                name="userFavoriteColor" 
+                id="favoriteColor">
+
+            <br>
+
         <label for="option">Opinião do Usuario:</label>
-            <select name="userOpinion" id="option">
+            <select 
+            name="userOpinion" 
+            id="option">
                 <option value="notInformed">Selecione...</option>
                 <option value="otima">Ótima</option>
                 <option value="boa">Boa</option>
@@ -171,20 +261,44 @@
                 <br>
             <label for="comentary">Diga o que achou do show: </label>
                 <br>
-            <textarea name="userComentary" id="comentary" placeholder="Coloque sua Opinião aqui..."></textarea>
+            <textarea 
+            name="userComentary" 
+            id="comentary" 
+            placeholder="Coloque sua Opinião aqui...">
+        </textarea>
+
             <br>
+
             <fieldset>
+                
                     <legend>Confirmações</legend>
 
-                    <input type="checkbox" name="userLgpd" id="userLgpdTerm" value="accept" required>
+                    <input 
+                    type="checkbox" 
+                    name="userLgpd" 
+                    id="userLgpdTerm" 
+                    value="accept" 
+                    required>
+
                     <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
+
                     <br>
-                    <input type="checkbox" name="userGetResult" id="getResult" value="accepted" required>
+
+                    <input 
+                    type="checkbox" 
+                    name="userGetResult" 
+                    id="getResult" 
+                    value="accepted" 
+                    required>
+
                     <label for="getResult">Desejo receber o resultado por email</label>
+
             </fieldset>
-            <button type="reset">Limpar</button>
         </fieldset>
+
             <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
         </form>
      </section>
     </main>
